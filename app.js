@@ -18,7 +18,7 @@ app.get("/", function(req, res){
 
 
 //Listener
-const PORT = process.env.port || 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, function(){
     console.log("JustinAmmar running on port ${ PORT }");
 });
