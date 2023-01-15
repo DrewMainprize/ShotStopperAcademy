@@ -2,11 +2,12 @@ body{
 	text-align: center;
 	background-color: black;
     color: white;
+    font-size: 22px;
 
 }
 
 header {
-    height: 80vh;
+    height: 100vh;
     min-height: 200px;
     background-size: cover;
     background-image: 
@@ -14,7 +15,7 @@ header {
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url("/images/Landing1.png");
+    url("/images/Landingv2.jpg");
 }
 
 .navbar{
@@ -40,6 +41,7 @@ a {
 .contact-button {
     text-decoration: none;
     font-size: 24px;
+    font-weight: 500;
 }
 
 .contact-button:hover {
@@ -94,7 +96,7 @@ a {
 .btn-primary-outline {
     border: 2px solid white;
     border-radius: 20px;
-    background: rgba(0, 0, 0, 0.1);
+    background-color: #96be25;
     color: white;
 }
 
