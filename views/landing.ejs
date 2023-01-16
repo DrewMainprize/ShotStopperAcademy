@@ -9,9 +9,6 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <!-- Insert any font styles -->
 		<link rel="stylesheet" type="text/css" href="../stylesheets/app.css">
-
-       <script src="https://kit.fontawesome.com/8ec674074b.js" crossorigin="anonymous"></script>
-
     </head>
 
     <body>
@@ -30,7 +27,7 @@
                         </div>
                     </a>
 
-                    <a href="#" class="contact-button">
+                    <a data-toggle="modal" data-target="#contactModal" class="contact-button modalOpener" id="modalNavButton">
                         CONTACT
                     </a>
                     
@@ -51,7 +48,7 @@
                         fun environment, for all levels of athletes. 
                     </div>
                     <div class="btn-holder">
-                        <button type="button" class="btn btn-outline-light">GET STARTED</button>
+                        <button id="landingButton" type="button" class="btn btn-outline-light modalOpener">GET STARTED</button>
                     </div>
     
                 </div>
@@ -64,25 +61,40 @@
             <div class="subtitle">
                 <h2 class="sub-heading"><span>WHO</span> WE ARE</h2>
             </div>
-            <div class="sub-text">
-                <p>Shot Stopper Academy is your one stop shop for all Goalkeeper’s looking to maximize their ability and training
-                    <br>
-                    located in Guelph, Ontario. We strive to provide top notch training that focuses on the athletes goals and 
-                    <br>
-                    playing ability. We offer 1 on 1 training, small group training (one coach to a maximum of five athletes),
-                    <br>
-                    group training camps, game/training video review, and are partnered with a local performance facility to help
-                    <br>
-                    our athletes with general fitness improvement. 
-                    <br>
-                    <br>
-                    <br>
-                    Shot Stopper Academy can create custom programs and clinics for on location training
-                    <br>
-                    development with Soccer Clubs,Academies, and Programs looking to provide a unique
-                    <br>
-                    training experience for their Goalkeepers.
-                </p>
+
+            <div class="container">
+                <div class="row align-items-start">
+                    <div class="col">
+                        <div class="sub-text" id="who-we-are-left">
+                            <p>Shot Stopper Academy is your one stop shop for all Goalkeeper’s looking to maximize their ability and training
+                                located in Guelph, Ontario. We strive to provide top notch training that focuses on the athletes goals and 
+                                playing ability. We offer 1 on 1 training, small group training (one coach to a maximum of five athletes),
+                                group training camps, game/training video review, and are partnered with a local performance facility to help
+                                our athletes with general fitness improvement. 
+                                <br>
+                                <br>
+                                Shot Stopper Academy can create custom programs and clinics for on location training
+                                development with Soccer Clubs,Academies, and Programs looking to provide a unique
+                                training experience for their Goalkeepers.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col justify-content-between">
+                        <div class="mapouter">
+                            <div class="gmap_canvas">
+                                <iframe width="475" height="475" id="gmap_canvas" src="https://maps.google.com/maps?q=80%20Southgate%20Dr,%20Guelph,%20ON%20N1G%204P5&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <a href="https://123movies-to.org"></a>
+                                <br>
+                                <style>.mapouter{position:relative;text-align:right;height:450px;width:450px;}</style>
+                                <a href="https://www.embedgooglemap.net">embed map in gmail</a>
+                                <style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:450px;}</style>
+                            </div>
+                        </div>
+                        <div class="sub-text" id="who-we-are-left">
+                            <p>Location: <a class="pursuit" href="https://www.jointhepursuit.com/">Pursuit Athletic Centre, Guelph ON.</a></p>
+                        </div>
+                    </div>
             </div>
 
         </section>
@@ -99,7 +111,7 @@
             </div>
         </section>
 
-        <section class="coaches container">
+        <section class="coaches">
             <div class="subtitle">
                 <h2 class="sub-heading"><span>OUR</span> COACHES</h2>
             </div>
@@ -131,5 +143,119 @@
                 </div>
             </div>
         </section>
+
+
+
+
+        <!-- Modal for Contact -->
      
+        <div class="modal fade" id="contactModal" tabIndex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Contact Us
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="name" class="col-form-label">Name:</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="col-form-label">Email:</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phoneNumber" class="col-form-label">Phone Number:</label>
+                                <input type="text" class="form-control" id="phoneNumber">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="athleteAge" class="col-form-label">Athlete Age:</label>
+                                <input type="text" class="form-control" id="athleteAge">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="club" class="col-form-label">Club:</label>
+                                <input type="text" class="form-control" id="club">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="questionGoal" class="col-form-label">Questions/Goals:</label>
+                                <input type="text" class="form-control" id="questionGoal">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+<div class="container my-5">
+
+    <footer class="foot">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 mb-4">
+          <h5 class="mb-3">Shot Stopper Academy</h5>
+          <p>
+            Thank you for your interest. To reach us, please use the 
+            contact form provided and we will get back to you shortly!
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-3">Follow Us</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1">
+              <a href="#!">Instagram</a>
+            </li>
+            <li class="mb-1">
+              <a href="#!">Facebook</a>
+            </li>
+            <li class="mb-1">
+              <a href="#!">Twitter</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <h5 class="mb-1">Latest News</h5>
+          <div class="row no-gutters">
+            
+            <!-- Will include latest 6 instagram posts with links to each -->
+
+
+
+
+        </div>
+      </div>
+    </div>
+    <div class="text-center p-3">
+      © 2023 Copyright:
+      <a class="text-dark" href="https://www.shotstopperacademy.ca/">shotstopperacademy.ca</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  
+</div>
+<!-- End of .container -->
+
+
+        <script src="https://kit.fontawesome.com/8ec674074b.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+                integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+                crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+                integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+                crossorigin="anonymous">
+      </script>
+       <script src="javascripts/modal.js"></script>
+
     </body>
