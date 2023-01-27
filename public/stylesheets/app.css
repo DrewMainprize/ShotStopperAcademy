@@ -299,7 +299,7 @@ blockquote:after {
       .modal .modal-content .modal-body {
         border-radius: 7px;
         overflow: hidden;
-        background-color: darkgray;
+        background-color: white;
         padding-left: 0px;
         padding-right: 0px;
         -webkit-box-shadow: 0 10px 50px -10px rgba(0, 0, 0, 0.9);
@@ -324,6 +324,10 @@ blockquote:after {
     .modal .btn-primary {
       padding-top: 10px;
       padding-bottom: 10px; }
+
+label {
+    color: black;
+}
   
 #nav2{
     background: black;
