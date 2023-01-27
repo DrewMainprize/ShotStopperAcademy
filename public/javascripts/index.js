@@ -2,8 +2,6 @@
 // When the user scrolls to the top of the page, slide up the navbar (50px out of the top view)
 window.onscroll = function() {scrollFunction()};
 
-console.log("This works");
-
 function scrollFunction() {
   if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
     document.getElementById("nav2").style.top = "0";
