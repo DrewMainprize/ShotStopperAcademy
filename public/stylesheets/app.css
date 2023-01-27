@@ -4,6 +4,7 @@ body{
     color: white;
     font-size: 22px;
     letter-spacing: 2px;
+    position: relative;
 }
 
 header {
@@ -260,7 +261,7 @@ blockquote:after {
 
 .grid > div::before,
 .grid > div > img {
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: 2 / 2 / 2 / 2;
 }
 
 .grid > div > img {
@@ -277,7 +278,8 @@ blockquote:after {
 
 
 .promo-img {
-    background-image: url("/images/GEE_0719crop.jpg");
+    background-image: url("/images/GEE_0968crop.jpg");
+    background-size: cover;
 }
 
 
@@ -323,5 +325,15 @@ blockquote:after {
       padding-top: 10px;
       padding-bottom: 10px; }
   
+#nav2{
+    background: black;
+    z-index: 99;
+    position: fixed;
+    top: -100px;
+    width: 100%;
+    transition: top 0.3s;
+}
 
-
+#secondLogo{
+    max-width: 50px;
+}

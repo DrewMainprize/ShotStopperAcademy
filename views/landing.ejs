@@ -7,6 +7,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+        <!-- Idk why i need this but without it everything breaks -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+
         <!-- Insert any font styles -->
 		<link rel="stylesheet" type="text/css" href="../stylesheets/app.css">
     </head>
@@ -14,12 +19,47 @@
     <body>
 
         <header class="main-header">
+            <!-- Navbar for everywhere else -->
+            <nav id="nav2" class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img id="secondLogo" src="images/SSACropTransparent.png">
+                        Shot Stopper Academy
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto nav-pills">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#whoWeAre">Who we are</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#coaches">Coaches</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" data-toggle="modal" data-target="#contactModal">Contact</a>
+                            </li>
+                        </ul>
+
+                        <ul class="navbar-nav sm-icons">
+                            <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.facebook.com/shotstopperacademy/"><i class="fab fa-facebook"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.instagram.com/shotstopperacademy/"><i class="fab fa-instagram"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" target="_blank" href="#"><i class="fab fa-tiktok"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+
             <div class="container">
-                <nav class="navbar">
+
+                <!-- Navbar for jumbotron -->
+                <nav id="nav1" class="navbar">
                     <div class="header-socials">
-                        <a href="https://www.facebook.com/shotstopperacademy" class="fab fa-facebook"></a>
-                        <a href="https://instagram.com/shotstopperacademy/" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-tiktok"></a>
+                        <a href="https://www.facebook.com/shotstopperacademy/" target="_blank" class="fab fa-facebook"></a>
+                        <a href="https://instagram.com/shotstopperacademy/" target="_blank" class="fab fa-instagram"></a>
+                        <a href="#" target="_blank" class="fab fa-tiktok"></a>
                     </div>
                     <a class="navbar-brand nav-logo mx-auto">
                         <div class="logo">
@@ -27,11 +67,14 @@
                         </div>
                     </a>
 
-                    <a data-toggle="modal" data-target="#contactModal" class="contact-button modalOpener" id="modalNavButton">
+                    <a data-toggle="modal" data-target="#contactModal" class="contact-button modalOpener1" id="modalNavButton">
                         CONTACT
                     </a>
                     
                 </nav>
+
+
+                
             </div>
 
             <section class="jumbo-section">
@@ -48,7 +91,7 @@
                         fun environment, for all levels of athletes. 
                     </div>
                     <div class="btn-holder">
-                        <button id="landingButton" type="button" class="btn btn-outline-light modalOpener">GET STARTED</button>
+                        <a data-toggle="modal" data-target="#contactModal" id="landingButton" type="button" class="btn btn-outline-light modalOpener2">GET STARTED</a>
                     </div>
     
                 </div>
@@ -56,147 +99,127 @@
                 
             </section>
         </header>
+        <div>
 
-        <section class="about-us">
-            <div class="subtitle">
-                <h2 class="sub-heading"><span>WHO</span> WE ARE</h2>
-            </div>
+            <section class="about-us">
+                <div class="subtitle">
+                    <h2 class="sub-heading" id="whoWeAre"><span>WHO</span> WE ARE</h2>
+                </div>
 
-            <div class="container">
-                <div class="row align-items-start">
-                    <div class="col">
-                        <div class="sub-text" id="who-we-are-left">
-                            <p>Shot Stopper Academy is your one stop shop for all Goalkeeper’s looking to maximize their ability and training
-                                located in Guelph, Ontario. We strive to provide top notch training that focuses on the athletes goals and 
-                                playing ability. We offer 1 on 1 training, small group training (one coach to a maximum of five athletes),
-                                group training camps, game/training video review, and are partnered with a local performance facility to help
-                                our athletes with general fitness improvement. 
-                                <br>
-                                <br>
-                                Shot Stopper Academy can create custom programs and clinics for on location training
-                                development with Soccer Clubs,Academies, and Programs looking to provide a unique
-                                training experience for their Goalkeepers.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col justify-content-between">
-                        <div class="mapouter">
-                            <div class="gmap_canvas">
-                                <iframe width="475" height="475" id="gmap_canvas" src="https://maps.google.com/maps?q=80%20Southgate%20Dr,%20Guelph,%20ON%20N1G%204P5&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                <a href="https://123movies-to.org"></a>
-                                <br>
-                                <style>.mapouter{position:relative;text-align:right;height:450px;width:450px;}</style>
-                                <a href="https://www.embedgooglemap.net">embed map in gmail</a>
-                                <style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:450px;}</style>
+                <div class="container">
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <div class="sub-text" id="who-we-are-left">
+                                <p>Shot Stopper Academy is your one stop shop for all Goalkeeper’s looking to maximize their ability and training
+                                    located in Guelph, Ontario. We strive to provide top notch training that focuses on the athletes goals and 
+                                    playing ability. We offer 1 on 1 training, small group training (one coach to a maximum of five athletes),
+                                    group training camps, game/training video review, and are partnered with a local performance facility to help
+                                    our athletes with general fitness improvement. 
+                                    <br>
+                                    <br>
+                                    Shot Stopper Academy can create custom programs and clinics for on location training
+                                    development with Soccer Clubs,Academies, and Programs looking to provide a unique
+                                    training experience for their Goalkeepers.
+                                </p>
                             </div>
                         </div>
-                        <div class="sub-text" id="who-we-are-left">
-                            <p>Location: <a class="pursuit" href="https://www.jointhepursuit.com/">Pursuit Athletic Centre, Guelph ON.</a></p>
+
+                        <div class="col justify-content-between">
+                            <div class="mapouter">
+                                <div class="gmap_canvas">
+                                    <iframe width="475" height="475" id="gmap_canvas" src="https://maps.google.com/maps?q=80%20Southgate%20Dr,%20Guelph,%20ON%20N1G%204P5&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <a href="https://123movies-to.org"></a>
+                                    <br>
+                                    <style>.mapouter{position:relative;text-align:right;height:450px;width:450px;}</style>
+                                    <a href="https://www.embedgooglemap.net">embed map in gmail</a>
+                                    <style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:450px;}</style>
+                                </div>
+                            </div>
+                            <div class="sub-text" id="who-we-are-left">
+                                <p>Location: <a class="pursuit" href="https://www.jointhepursuit.com/">Pursuit Athletic Centre, Guelph ON.</a></p>
+                            </div>
                         </div>
-                    </div>
-            </div>
-
-        </section>
-
-        <section class="image-gallery">
-            <div class="container">
-                <div class="grid">
-                    <div><img src="/images/GEE_0747.jpg"></div>
-                    <div><img src="/images/GEE_0742.jpg"></div>
-                    <div><img src="/images/GEE_0719.jpg"></div>
-                    <div><img src="/images/GEE_0881.jpg"></div>
-                    <div><img src="/images/GEE_0925.jpg"></div>
-                    <div><img src="/images/GEE_1009.jpg"></div>
-                    <div><img src="/images/GEE_1051.jpg"></div>
-                    <div><img src="/images/GEE_0968.jpg"></div>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="our-quote">
-            <div class="sub-text quote">
-                <blockquote>
-                    Most kids dream of scoring the perfect goal.
-                    <br>
-                    I’ve always dreamed of stopping it.
-                </blockquote>
-                    <br>
-                    <i>- Iker Casillas</i>
-            </div>
-        </section>
-
-        <section class="coaches">
-            <div class="subtitle">
-                <h2 class="sub-heading"><span>OUR</span> COACHES</h2>
-            </div>
-            <div class="sub-text">
-                <div class="profile-card-2">
-                    <img src="/images/GEE_0725.jpg" class="img img-responsive">
-                    <div class="profile-name">JUSTIN AMMAR</div>
-                    <div class="profile-username">@shotstopperacademy</div>
-                    <div class="profile-icons">
-                        <a href="">
-                            <i class="fa fa-envelope"></i>
-                        </a>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
 
-
-        <!--  --------------------------------------------------------------------------- -->
-
-        <div class="modal fade" id="contactModal" tabIndex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-              <div class="modal-content rounded-0">
-                <div class="modal-body py-0">
-      
-                  
-                  <div class="d-flex main-content">
-                    <div class="bg-image promo-img mr-3">
-                    </div>
-                    <div class="content-text p-4">
-                      <h3>Contact Us</h3>
-                      <p>Thank you for your interest, we will get back to you shortly!</p>
-      
-                      <form action="#">
-                        <div class="form-group">
-                          <label for="fname">Full Name</label>
-                          <input type="text" class="form-control" id="fname" placeholder="Full Name">
-                        </div>
-
-                        <div class="form-group">
-                          <label for="email">Email Address</label>
-                          <input type="email" class="form-control" id="email" placeholder="Email Address">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="phone">Phone Number</label>
-                            <input type="text" class="form-control" id="phone" placeholder="Phone Number">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="questions">Message</label>
-                            <input type="textarea" class="form-control" id="questions" placeholder="Questions, additional info, athlete age, club, etc.">
-                        </div>
-                        
-                        
-                        
-                        <div class="form-group">
-                          <input type="submit" value="Send Message" class="btn btn-primary btn-block">
-                        </div>
-                       
-                      </form>
-                    </div>
-                  </div>
-      
+            <section class="our-quote">
+                <div class="sub-text quote">
+                    <blockquote>
+                        Most kids dream of scoring the perfect goal.
+                        <br>
+                        I’ve always dreamed of stopping it.
+                    </blockquote>
+                        <br>
+                        <i>- Iker Casillas</i>
                 </div>
-              </div>
+            </section>
+
+            <section class="coaches">
+                <div class="subtitle">
+                    <h2 id="coaches" class="sub-heading"><span>OUR</span> COACHES</h2>
+                </div>
+                <div class="sub-text">
+                    <div class="profile-card-2">
+                        <img src="/images/GEE_0725.jpg" class="img img-responsive">
+                        <div class="profile-name">JUSTIN AMMAR</div>
+                        <div class="profile-username">@shotstopperacademy</div>
+                        <div class="profile-icons">
+                            <a href="">
+                                <i class="fa fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--  --------------------------------------------------------------------------- -->
+
+            <div class="modal fade" id="contactModal" tabIndex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content rounded-0">
+                        <div class="modal-body py-0">
+                    
+                            <div class="d-flex main-content">
+                                <div class="bg-image promo-img mr-3">
+                                </div>
+                                <div class="content-text p-4">
+                                    <h3>Contact Us</h3>
+                                    <p>Thank you for your interest, we will get back to you shortly!</p>
+      
+                                    <form action="#">
+                                        <div class="form-group">
+                                            <label for="fname">Full Name</label>
+                                            <input type="text" class="form-control" id="fname" placeholder="Full Name" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="email">Email Address</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Email Address" required>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="phone">Phone Number</label>
+                                            <input type="text" class="form-control" id="phone" placeholder="Phone Number">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="questions">Message</label>
+                                            <input type="textarea" class="form-control" id="questions" placeholder="Questions, additional info, athlete age, club, etc.">
+                                        </div>
+                        
+                                        <div class="form-group">
+                                            <input type="submit" value="Send Message" class="btn btn-primary btn-block">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
             <!--  --------------------------------------------------------------------------- -->
 
 
@@ -204,55 +227,48 @@
         <footer>
             <!-- Remove the container if you want to extend the Footer to full width. -->
             <div class="container my-5">
-
                 <div class="container p-4">
-                  <div class="row">
-                    <div class="col-lg-6 col-md-12 mb-4">
-                      <h5 class="mb-3">Shot Stopper Academy</h5>
-                      <p>
-                        Thank you for your interest. To reach us,
-                        <br>
-                        please use the contact form provided and 
-                        <br>
-                        we will get back to you shortly!
-                      </p>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mb-4">
+                            <h5 class="mb-3">Shot Stopper Academy</h5>
+                            <p>
+                                Thank you for your interest. To reach us,
+                                <br>
+                                please use the contact form provided and 
+                                <br>
+                                we will get back to you shortly!
+                            </p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <h5 class="mb-3">Follow Us</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-1">
+                                    <a target="_blank" href="https://www.instagram.com/shotstopperacademy/">Instagram</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a target="_blank" href="https://www.facebook.com/shotstopperacademy/">Facebook</a>
+                                </li>
+                                <li class="mb-1">
+                                    <a target="_blank" href="#">TikTok</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-4">
+                            <h5 class="mb-1">Latest News</h5>
+                            <div class="row no-gutters">
+                                <!-- Will include latest 6 instagram posts with links to each -->
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
-                      <h5 class="mb-3">Follow Us</h5>
-                      <ul class="list-unstyled mb-0">
-                        <li class="mb-1">
-                          <a href="#!">Instagram</a>
-                        </li>
-                        <li class="mb-1">
-                          <a href="#!">Facebook</a>
-                        </li>
-                        <li class="mb-1">
-                          <a href="#!">TikTok</a>
-                        </li>
-                      </ul>
+                    <div class="text-center p-3">
+                        © 2023 Copyright:
+                        <a class="text-dark" href="https://www.shotstopperacademy.ca/">shotstopperacademy.ca</a>
                     </div>
-                    <div class="col-lg-3 col-md-6 mb-4">
-                      <h5 class="mb-1">Latest News</h5>
-                      <div class="row no-gutters">
-
-                        <!-- Will include latest 6 instagram posts with links to each -->
-                    
-                    
-                    
-                    
-                    </div>
-                  </div>
+                    <!-- Copyright -->
+        
                 </div>
-                <div class="text-center p-3">
-                  © 2023 Copyright:
-                  <a class="text-dark" href="https://www.shotstopperacademy.ca/">shotstopperacademy.ca</a>
-                </div>
-                <!-- Copyright -->
-            
-            </div>
-            <!-- End of .container -->
-        </footer>
-
+                <!-- End of .container -->
+            </footer>
 
         <script src="https://kit.fontawesome.com/8ec674074b.js" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.3.min.js"
@@ -263,6 +279,6 @@
                 integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
                 crossorigin="anonymous">
       </script>
-       <script src="javascripts/modal.js"></script>
+       <script src="javascripts/index.js" type="text/javascript"></script>
 
     </body>
