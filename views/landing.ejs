@@ -161,16 +161,18 @@
                     <h2 id="coaches" class="sub-heading"><span>OUR</span> COACHES</h2>
                 </div>
                 <div class="sub-text">
-                    <div class="profile-card-2">
-                        <img src="/images/GEE_0725.jpg" class="img img-responsive">
-                        <div class="profile-name">JUSTIN AMMAR</div>
-                        <div class="profile-username">@shotstopperacademy</div>
-                        <div class="profile-icons">
-                            <a href="">
-                                <i class="fa fa-envelope"></i>
-                            </a>
+                    <a data-toggle="modal" data-target="#profileModal">
+                        <div class="profile-card-2">
+                            <img src="/images/GEE_0725.jpg" class="img img-responsive">
+                            <div class="profile-name">JUSTIN AMMAR</div>
+                            <div class="profile-username">@shotstopperacademy</div>
+                            <div class="profile-icons">
+                                <a href="">
+                                    <i class="fa fa-envelope"></i>
+                                </a>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </section>
 
@@ -188,7 +190,7 @@
                                     <h3>Contact Us</h3>
                                     <p>Thank you for your interest, we will get back to you shortly!</p>
       
-                                    <form action="#">
+                                    <form action="https://formspree.io/f/xknaorpk" method="POST">
                                         <div class="form-group">
                                             <label for="fname">Full Name</label>
                                             <input type="text" class="form-control" id="fname" placeholder="Full Name" required>
@@ -206,8 +208,7 @@
 
                                         <div class="form-group">
                                             <label for="questions">Message</label>
-                                            <input type="textarea" class="form-control" id="questions" placeholder="Questions, additional info, athlete age, club, etc.">
-                                            
+                                            <textarea class="form-control" rows="4" id="questions" placeholder="Questions, additional info, athlete age, club, etc."></textarea>
                                         </div>
                         
                                         <div class="form-group">
@@ -223,6 +224,25 @@
         </div>
             <!--  --------------------------------------------------------------------------- -->
 
+            <div class="modal fade" id="profileModal" tabIndex="-1" role="dialog" aria-labelledby="profileModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content rounded-0">
+                        <div class="modal-body py-0">
+                            <div class="card">
+                                <h4 class="card-header">Justin Ammar</h4>
+                                <div class="card-body">
+                                    <div class="profile-parent">
+                                        <img src="/images/GEE_0725Square.jpg" class="img profile-pic img-responsive img-rounded full-width">
+                                    </div>
+                                    <p class="card-text">When Ammar works with athletes he enjoys training athletes who are committed, motivated, and positive. In return, Ammar promises to bring the same commitment, motivation, and positive energy to all training sessions. </p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
 
 
         <footer>
