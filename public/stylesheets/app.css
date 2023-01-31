@@ -71,6 +71,7 @@ a {
 }
 
 .jumbo-section {
+    height: 100vh;
     position: relative;
     padding-top: 100px;
     font-size: 20px;
@@ -106,9 +107,9 @@ a {
 }
 
 .about-us {
-    height: 80vh;
+    /*height: 80%;*/
     margin-top: 100px;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 #who-we-are-left {
@@ -274,12 +275,18 @@ blockquote:after {
     background-color: #0f0f0f;
     margin: 0;
     padding: 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 
 .promo-img {
     background-image: url("/images/GEE_0968Crop.jpg");
     background-size: cover;
+}
+
+#modalNavButton{
+    cursor: pointer;
 }
 
 
@@ -342,6 +349,10 @@ label {
     max-width: 50px;
 }
 
+i{
+    font-style: none;
+}
+
 .card-header{
     color: black;
 }
@@ -373,7 +384,7 @@ label {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: #fff;
+    background-color: white;
     background-clip: border-box;
     border: 0 solid transparent;
     border-radius: .25rem;
@@ -460,7 +471,7 @@ Main Components
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #7b9d6f;
+  background-color: #241b1b;
   -webkit-transform: scaleX(0);
   -moz-transform: scaleX(0);
   -ms-transform: scaleX(0);
@@ -512,18 +523,19 @@ Main Components
   transition: background-color 0.3s, border-color 0.3s;
 }
 .no-touch .cd-horizontal-timeline .events a:hover::after {
-  background-color: #7b9d6f;
-  border-color: #7b9d6f;
+  background-color: #241b1b;
+  border-color: #241b1b;
 }
 .cd-horizontal-timeline .events a.selected {
   pointer-events: none;
+  color: red;
 }
 .cd-horizontal-timeline .events a.selected::after {
-  background-color: #7b9d6f;
-  border-color: #7b9d6f;
+  background-color: #241b1b;
+  border-color: #241b1b;
 }
 .cd-horizontal-timeline .events a.older-event::after {
-  border-color: #7b9d6f;
+  border-color: #241b1b;
 }
 @media only screen and (min-width: 1100px) {
   .cd-horizontal-timeline {
@@ -588,7 +600,7 @@ Main Components
   right: 0;
 }
 .no-touch .cd-timeline-navigation a:hover {
-  border-color: #7b9d6f;
+  border-color: black;
 }
 .cd-timeline-navigation a.inactive {
   cursor: not-allowed;
@@ -671,7 +683,7 @@ Main Components
   margin: 10px auto;
 }
 .cd-horizontal-timeline .events-content em::before {
-  content: '- ';
+  /*content: '- ';*/
 }
 .cd-horizontal-timeline .events-content p {
   font-size: 1.4rem;
@@ -779,4 +791,57 @@ ol{
 
 .description{
     margin: 2rem;
+}
+
+.timelineDate{
+    text-decoration: none;
+}
+
+
+/* For animation of scroll link in jumbotron */
+
+.middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.mouse {
+    width: 35px;
+    height: 55px;
+    border: 1.5px solid white;
+    border-radius: 60px;
+}
+
+.mouse::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    top: 30px;
+    background-color: white;   
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    opacity: 1;
+    animation: mouse 2s infinite;
+}
+
+@keyframes mouse {
+    from {
+        opacity: 1;
+        top: 18px;
+    }
+    to {
+        opacity: 0;
+        top: 50px;
+    }
+}
+
+.asterisk{
+    color: red;
+    font-size: 22px;
 }

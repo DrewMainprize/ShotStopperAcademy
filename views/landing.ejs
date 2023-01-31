@@ -21,7 +21,7 @@
         <header class="main-header">
             <!-- Navbar for everywhere else -->
             <nav id="nav2" class="navbar navbar-expand-lg navbar-dark">
-                <div class="container-fluid">
+                <div class="container-fluid container">
                     <a class="navbar-brand" href="#">
                         <img id="secondLogo" src="images/SSACropTransparent.png">
                         Shot Stopper Academy
@@ -43,8 +43,8 @@
                         </ul>
 
                         <ul class="navbar-nav sm-icons">
-                            <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.facebook.com/shotstopperacademy/"><i class="fab fa-facebook"></i></a></li>
                             <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.instagram.com/shotstopperacademy/"><i class="fab fa-instagram"></i></a></li>
+                            <li class="nav-item"><a class="nav-link" target="_blank" href="https://www.facebook.com/shotstopperacademy/"><i class="fab fa-facebook"></i></a></li>
                             <li class="nav-item"><a class="nav-link" target="_blank" href="#"><i class="fab fa-tiktok"></i></a></li>
                         </ul>
                     </div>
@@ -56,21 +56,20 @@
 
                 <!-- Navbar for jumbotron -->
                 <nav id="nav1" class="navbar">
-                    <div class="header-socials">
-                        <a href="https://www.facebook.com/shotstopperacademy/" target="_blank" class="fab fa-facebook"></a>
-                        <a href="https://instagram.com/shotstopperacademy/" target="_blank" class="fab fa-instagram"></a>
-                        <a href="#" target="_blank" class="fab fa-tiktok"></a>
-                    </div>
-                    <a class="navbar-brand nav-logo mx-auto">
-                        <div class="logo">
-                            <img id="mainLogo" src="images/SSACropTransparent.png">
+                        <div class="header-socials">
+                            <a href="https://instagram.com/shotstopperacademy/" target="_blank" class="fab fa-instagram"></a>
+                            <a href="https://www.facebook.com/shotstopperacademy/" target="_blank" class="fab fa-facebook"></a>
+                            <a href="#" target="_blank" class="fab fa-tiktok"></a>
                         </div>
-                    </a>
+                        <a class="navbar-brand nav-logo mx-auto">
+                            <div class="logo">
+                                <img id="mainLogo" src="images/SSACropTransparent.png">
+                            </div>
+                        </a>
 
-                    <a data-toggle="modal" data-target="#contactModal" class="contact-button modalOpener1" id="modalNavButton">
-                        CONTACT
-                    </a>
-                    
+                        <a data-toggle="modal" data-target="#contactModal" class="contact-button modalOpener1" id="modalNavButton">
+                            CONTACT
+                        </a>
                 </nav>
 
 
@@ -79,19 +78,27 @@
 
             <section class="jumbo-section">
                 <div class="content-boxed landing-title">
-                    <h1>
-                        <span>Shot Stopper</span>
-                        <br>
-                        Academy
-                    </h1>
-    
-                    <div class="banner-text">
-                        Providing top notch goalkeeper training in a safe and,
-                        <br>
-                        fun environment, for all levels of athletes. 
-                    </div>
-                    <div class="btn-holder">
-                        <a data-toggle="modal" data-target="#contactModal" id="landingButton" type="button" class="btn btn-outline-light modalOpener2">GET STARTED</a>
+                    <div class="d-flex flex-column bd-highlight mb-3">
+                        <div class="p-2 bd-highlight">
+                            <h1>
+                                <span>Shot Stopper</span>
+                                <br>
+                                Academy
+                            </h1>
+                        </div>
+                        <div class="p-2 bd-highlight banner-text">
+                            Providing top notch goalkeeper training in a safe and
+                            <br>
+                            fun environment, for all levels of athletes.
+                        </div>
+                        <div class="p-2 bd-highlight btn-holder">
+                            <a data-toggle="modal" data-target="#contactModal" id="landingButton" type="button" class="btn btn-outline-light modalOpener2">GET STARTED</a>
+                        </div>
+                        <div class="p-2 bd-highlight middle" data-offset="300" onClick="document.getElementById('scrollClicker').scrollIntoView();">
+                            <div class="mouse">
+                                
+                            </div>
+                        </div>
                     </div>
     
                 </div>
@@ -101,38 +108,38 @@
         </header>
         <div>
 
-            <section class="about-us">
+            <section class="about-us" id="scrollClicker">
                 <div class="subtitle">
                     <h2 class="sub-heading" id="whoWeAre"><span>WHO</span> WE ARE</h2>
                 </div>
 
                 <div class="container">
                     <div class="row align-items-start">
-                        <div class="col">
+                        <div class="col-md-6">
                             <div class="sub-text" id="who-we-are-left">
-                                <p>Shot Stopper Academy is your one stop shop for all Goalkeeper’s looking to maximize their ability and training
-                                    located in Guelph, Ontario. We strive to provide top notch training that focuses on the athletes goals and 
-                                    playing ability. We offer 1 on 1 training, small group training (one coach to a maximum of five athletes),
+                                <p>Shot Stopper Academy is your one stop shop for all Goalkeeper’s looking to maximize their training to its full potential,
+                                    located in Guelph, Ontario. We strive to provide goal-oriented training that focuses on the athlete's, skill progression, and
+                                    playing ability. We offer 1-on-1 training, small group training (one coach to a maximum of five athletes),
                                     group training camps, game/training video review, and are partnered with a local performance facility to help
                                     our athletes with general fitness improvement. 
                                     <br>
                                     <br>
                                     Shot Stopper Academy can create custom programs and clinics for on location training
-                                    development with Soccer Clubs,Academies, and Programs looking to provide a unique
+                                    development with Soccer Clubs, Academies, and Programs looking to provide a unique
                                     training experience for their Goalkeepers.
                                 </p>
                             </div>
                         </div>
 
-                        <div class="col justify-content-between">
+                        <div class="col-md-6 justify-content-between">
                             <div class="mapouter">
                                 <div class="gmap_canvas">
-                                    <iframe width="475" height="475" id="gmap_canvas" src="https://maps.google.com/maps?q=80%20Southgate%20Dr,%20Guelph,%20ON%20N1G%204P5&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                    <iframe width="500" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=80%20Southgate%20Dr,%20Guelph,%20ON%20N1G%204P5&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                                     <a href="https://123movies-to.org"></a>
                                     <br>
-                                    <style>.mapouter{position:relative;text-align:right;height:450px;width:450px;}</style>
+                                    <style>.mapouter{position:relative;text-align:right;height: 500px;width: 500px;}</style>
                                     <a href="https://www.embedgooglemap.net">embed map in gmail</a>
-                                    <style>.gmap_canvas {overflow:hidden;background:none!important;height:450px;width:450px;}</style>
+                                    <style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:500px;}</style>
                                 </div>
                             </div>
                             <div class="sub-text" id="who-we-are-left">
@@ -186,13 +193,13 @@
                                                     <h4>Justin Ammar</h4>
                                                     <p class="text-secondary mb-1">Founder | Head Coach</p>
                                                     <p class="text-muted font-size-sm">Guelph, ON.</p>
-                                                    <button class="btn btn-outline-primary">Contact</button>
+                                                    <button class="btn btn-outline-primary" data-toggle="modal" data-target="#contactModal">Contact</button>
                                                 </div>
                                             </div>
                                             <hr class="my-4">
                                             <ul class="list-group list-group-flush">
                                                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
-                                                    <h6 class="mb-0"><i class="fab fa-globe"></i>Website</h6>
+                                                    <h6 class="mb-0"><i class="fab fa-dark fa-globe text-danger"></i>Website</h6>
                                                     <span class="text-secondary">https://shotstopperacademy.ca</span>
                                                 </li>
                                                 <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
@@ -211,30 +218,34 @@
                                 <div class="col-lg-8">
                                     <div class="card">
                                         <div class="container">
-                                            <p class="description">Justin Ammar was born and raised in St. Albert, Alberta and currently resides in Guelph, Ontario. With 5+ years coaching experience and 20 years of playing experience as a goalkeeper, Ammar is excited to pass on his wealth of knowledge to up and coming goalkeepers. Ammar’s overseas playing experience has developed him into a well rounded coach with a German flare in his coaching style. Specializing in Goalkeeper training, Ammar encourages and helps develop athletes of any age and gender to accomplish their playing and athletic goals. Key player attributes Ammar focuses on during his training sessions include footwork, reflexes, speed, diving, proper catching technique, aerial attack, counter attack, defensive and player communication, and mental development of an athlete. </p>
+                                            <h3>Biography</h3>
+                                            <p class="description">Justin Ammar was born and raised in St. Albert, Alberta and currently resides in Guelph, Ontario. With over 5 years of coaching experience, and 20 years of playing experience, Ammar is excited to pass on his wealth of knowledge to up and coming goalkeepers. Ammar’s overseas playing experience has developed him into a well rounded coach with a German flare in his coaching style. Specializing in Goalkeeper training, Ammar encourages and helps develop athletes of any age and gender to accomplish their playing and athletic goals. Key player attributes Ammar focuses on during his training sessions include footwork, reflexes, speed, diving, proper catching technique, aerial attack, counter attack, defensive and player communication, and mental development of an athlete. </p>
                                             <p class="description">When Ammar works with athletes he enjoys training athletes who are committed, motivated, and positive. In return, Ammar promises to bring the same commitment, motivation, and positive energy to all training sessions. </p>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="card">
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="card">
 
 
                                                 <section class="cd-horizontal-timeline">
                                                     <div class="timeline">
+                                                        <h3>Playing Career</h3>
                                                         <div class="events-wrapper">
                                                             <div class="events">
                                                                 <ol>
-                                                                    <li><a href="#0" data-date="01/01/2003">2003</a></li>
-                                                                    <li><a href="#0" data-date="01/01/2004">2004</a></li>
-                                                                    <li><a href="#0" data-date="01/01/2006">2006</a></li>
-                                                                    <li><a href="#0" data-date="01/01/2007">2007</a></li>
-                                                                    <li><a href="#0" data-date="01/01/2009" class="selected">2009</a></li>
-                                                                    <li><a href="#0" data-date="01/01/2012">2012</a></li>
-                                                                    <li><a href="#0" data-date="01/01/2013">2013</a></li>
-                                                                    <li><a href="#0" data-date="01/01/2016">2016</a></li>
-                                                                    <li><a href="#0" data-date="01/01/2019">2019</a></li>
-                                                                    <li><a href="#0" data-date="01/01/2020">2020</a></li>
+                                                                    <li><a class="timelineDate selected" href="#0" data-date="01/01/2003">2003</a></li>
+                                                                    <li><a class="timelineDate" href="#0" data-date="01/01/2005">2004</a></li>
+                                                                    <li><a class="timelineDate" href="#0" data-date="01/01/2007">2006</a></li>
+                                                                    <li><a class="timelineDate" href="#0" data-date="01/01/2009">2007</a></li>
+                                                                    <li><a class="timelineDate" href="#0" data-date="01/01/2011">2009</a></li>
+                                                                    <li><a class="timelineDate" href="#0" data-date="01/01/2013">2012</a></li>
+                                                                    <li><a class="timelineDate" href="#0" data-date="01/01/2015">2013</a></li>
+                                                                    <li><a class="timelineDate" href="#0" data-date="01/01/2017">2016</a></li>
+                                                                    <li><a class="timelineDate" href="#0" data-date="01/01/2019">2019</a></li>
+                                                                    <li><a class="timelineDate" href="#0" data-date="01/01/2021">2020</a></li>
 
                                                                 </ol>
                                                 
@@ -250,29 +261,29 @@
                                                 
                                                     <div class="events-content">
                                                         <ol>
-                                                            <li data-date="01/01/2003">
+                                                            <li data-date="01/01/2003" class="selected">
                                                                 <h3>U14 Super Y League, Zone 5 Gold Medal Champs </h3>
                                                                 <em>2003</em>
                                                             </li>
                                                 
-                                                            <li data-date="01/01/2004">
+                                                            <li data-date="01/01/2005">
                                                                 <h3>U16 Team Canada Development Program</h5>
                                                                 <em>2004</em>
                                                             </li>
                                                 
-                                                            <li data-date="01/01/2006">
+                                                            <li data-date="01/01/2007">
                                                                 <h3>Gold Medal National Champs with St. Albert Impact </h3>
                                                                 <em>2006</em>
                                                             </li>
                                                 
-                                                            <li data-date="01/01/2007">
+                                                            <li data-date="01/01/2009">
                                                                 <h3>Grant MacEwan University Soccer Team </h3>
                                                                 <em>2007-2008</em>
                                                                 <p>- Bronze medalists at Nationals</p>
                                                                 <p>- MVP for Nationals Tournament</p>
                                                             </li>
                                                 
-                                                            <li data-date="01/01/2009" class="selected">
+                                                            <li data-date="01/01/2011">
                                                                 <h3>Signed with SV Heimstetten</h3>
                                                                 <em>2009-2011</em>
                                                                 <p>- Regionalliga in Munich, Germany</p>
@@ -281,19 +292,19 @@
                                                                 <p>- 2010 Regionalliga Division Champions</p>
                                                             </li>
                                                 
-                                                            <li data-date="01/01/2012">
+                                                            <li data-date="01/01/2013">
                                                                 <h3>NAIT OOKS</h3>
                                                                 <em>2012</em>
                                                                 <p>- ACAC Division Champions</p>
                                                                 <p>- National Gold Medal Champions</p>
                                                             </li>
                                                 
-                                                            <li data-date="01/01/2013">
+                                                            <li data-date="01/01/2015">
                                                                 <h3>FC Edmonton</h3>
                                                                 <em>2013-2015</em>
                                                             </li>
                                                 
-                                                            <li data-date="01/01/2016">
+                                                            <li data-date="01/01/2017">
                                                                 <h3>Dinamo Edmonton Croatian Soccer Club</h3>
                                                                 <em>2016-2017</em>
                                                                 <p>- 2016 & 2017 Premiere League Champions</p>
@@ -305,7 +316,7 @@
                                                                 <em>2019</em>
                                                             </li>
                                                 
-                                                            <li data-date="01/01/2020">
+                                                            <li data-date="01/01/2021">
                                                                 <h3>Player Retirement</h3>
                                                                 <em>2020</em>
                                                             </li>
@@ -316,7 +327,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                            
                             </div>
                         </div>
                     </div>
@@ -341,12 +352,12 @@
       
                                     <form action="https://formspree.io/f/xknaorpk" method="POST">
                                         <div class="form-group">
-                                            <label for="fname">Full Name</label>
+                                            <label for="fname"><span class="asterisk">*</span>Full Name</label>
                                             <input name="Full Name" type="text" class="form-control" id="fname" placeholder="Full Name" required>
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="email">Email Address</label>
+                                            <label for="email"><span class="asterisk">*</span>Email Address</label>
                                             <input name="Email" type="email" class="form-control" id="email" placeholder="Email Address" required>
                                         </div>
 
@@ -359,9 +370,11 @@
                                             <label for="questions">Message</label>
                                             <textarea name="Questions" class="form-control" rows="4" id="questions" placeholder="Questions, additional info, athlete age, club, etc."></textarea>
                                         </div>
+
+                                        <p><span class="asterisk">*</span> - required</p>
                         
                                         <div class="form-group">
-                                            <input type="submit" value="Send Message" class="btn btn-primary btn-block">
+                                            <input type="submit" value="Send Message" class="btn btn-primary btn-block" id="submit-contact">
                                         </div>
                                     </form>
                                 </div>

@@ -16,7 +16,7 @@ function scrollFunction() {
 
 jQuery(document).ready(function($){
 	var timelines = $('.cd-horizontal-timeline'),
-		eventsMinDistance = 60;
+		eventsMinDistance = 100;
 
 	(timelines.length > 0) && initTimeline(timelines);
 
@@ -290,4 +290,11 @@ jQuery(document).ready(function($){
 		//check if mobile or desktop device
 		return window.getComputedStyle(document.querySelector('.cd-horizontal-timeline'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
 	}
+});
+
+
+
+//Clears form after submission
+$('#submit-contact').on('click', function(){
+  reset();
 });
