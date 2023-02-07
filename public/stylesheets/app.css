@@ -37,7 +37,7 @@ footer {
 }
 
 #mainLogo{
-    height: 20vh;
+    height: 16vh;
 }
 
 a {
@@ -84,12 +84,12 @@ a {
 
 .landing-title h1 {
     font-weight: 700;
-    font-size: 50px;
+    font-size: 44px;
     text-transform: uppercase;
 }
 
 .landing-title h1 span {
-    font-size: 60px;
+    font-size: 55px;
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
