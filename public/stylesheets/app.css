@@ -13,6 +13,10 @@ header {
     min-height: 200px;
     background-size: cover;
     background-repeat: repeat-y;
+
+    background-attachment: fixed;
+    background-position: bottom;
+    
     background-image: 
     linear-gradient(
       rgba(0, 0, 0, 0.2),
@@ -137,11 +141,12 @@ a {
 
 .our-quote {
     height: 60vh;
-    background-color: rgba(0, 0, 0, 0.1);
-    background-image: url("/images/ScollBG.jpg");
+    background-color: rgba(0, 0, 0, 0.3);
+    background-image: url("/images/GEE_0773.jpg"); /*url("/images/ScollBG.jpg");*/
     background-repeat: repeat-y; /*no-repeat;*/
     background-attachment: fixed;
     background-position: bottom;
+    filter: grayscale(50%) saturate(0.5);
 
 }
 
