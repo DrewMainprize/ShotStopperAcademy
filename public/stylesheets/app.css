@@ -26,6 +26,7 @@ header {
     url("/images/Landingv2.jpg");
 }
 
+/* Fixes header image on smaller screen resolution */
 @media screen and (max-width: 992px) {
   header {
       background-attachment: scroll;
@@ -111,12 +112,12 @@ a {
 
 .landing-title h1 {
     font-weight: 700;
-    font-size: 44px;
+    font-size: 2rem;
     text-transform: uppercase;
 }
 
 .landing-title h1 span {
-    font-size: 55px;
+    font-size: 3rem;
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
@@ -833,8 +834,15 @@ ol{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 25%;
+    margin-top: 15%;
     cursor: pointer;
+}
+
+/* Fixes header image on smaller screen resolution */
+@media screen and (max-width: 900px) {
+  .middle {
+      margin-top: 25%;
+  }
 }
 
 .mouse {
