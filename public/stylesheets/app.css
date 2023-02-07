@@ -422,7 +422,7 @@ Main Components
   position: relative;
   height: 100px;
   width: 90%;
-  max-width: 800px;
+  max-width: 2000px;
   margin: 0 auto;
 }
 .cd-horizontal-timeline .events-wrapper {
@@ -844,4 +844,18 @@ ol{
 .asterisk{
     color: red;
     font-size: 22px;
+}
+
+.row-centered{
+    text-align: center;
+}
+
+.bio-heading{
+    margin: 1em;
+}
+
+
+
+.es-widget-header-container, .es-widget-header-container-template {
+  color: white;
 }
