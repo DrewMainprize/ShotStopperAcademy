@@ -145,7 +145,7 @@ a {
     background-image: url("/images/GEE_0773.jpg"); /*url("/images/ScollBG.jpg");*/
     background-repeat: repeat-y;
     background-attachment: fixed;
-    background-position: bottom;
+    background-position: top;
     filter: grayscale(50%) saturate(0.5);
 
 }
