@@ -834,14 +834,14 @@ ol{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 15%;
+    margin-top: 10%;
     cursor: pointer;
 }
 
 /* Fixes header image on smaller screen resolution */
 @media screen and (max-width: 900px) {
   .middle {
-      margin-top: 30%;
+      margin-top: 20%;
   }
 }
 
