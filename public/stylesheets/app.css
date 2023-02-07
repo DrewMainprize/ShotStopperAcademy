@@ -866,3 +866,6 @@ ol{
 }
 
 
+.gmap-canvas{
+  max-width: 100%;
+}
