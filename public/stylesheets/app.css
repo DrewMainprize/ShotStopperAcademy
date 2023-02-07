@@ -26,6 +26,12 @@ header {
     url("/images/Landingv2.jpg");
 }
 
+@media screen and (max-width: 992px) {
+  header {
+      background-attachment: scroll;
+  }
+}
+
 footer {
     text-align: left;
     font-size: 16px !important;
