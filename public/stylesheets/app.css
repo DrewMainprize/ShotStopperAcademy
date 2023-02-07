@@ -841,7 +841,7 @@ ol{
 /* Fixes header image on smaller screen resolution */
 @media screen and (max-width: 900px) {
   .middle {
-      margin-top: 25%;
+      margin-top: 30%;
   }
 }
 
