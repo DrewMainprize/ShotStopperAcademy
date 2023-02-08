@@ -526,7 +526,7 @@ Main Components
   text-align: center;
   font-size: 1.3rem;
   padding-bottom: 15px;
-  color: #383838;
+  color: #575757; /* #383838 */
   /* fix bug on Safari - text flickering while timeline translates */
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -559,9 +559,10 @@ Main Components
   background-color: #241b1b;
   border-color: #241b1b;
 }
-.cd-horizontal-timeline .events a.selected {
+.cd-horizontal-timeline .events a.selected .tlHover{
   pointer-events: none;
-  color: red;
+  color: white;
+  background-color: black;
 }
 .cd-horizontal-timeline .events a.selected::after {
   background-color: #241b1b;
@@ -720,7 +721,7 @@ Main Components
 }
 .cd-horizontal-timeline .events-content p {
   font-size: 1.4rem;
-  color: #959595;
+  color: #575757;
 }
 .cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
   line-height: 1.6;
@@ -828,6 +829,18 @@ ol{
 
 .timelineDate{
     text-decoration: none;
+}
+
+.tlHover{
+  border-radius: 6px;
+  padding: 2px;
+}
+
+.tlHover:hover {
+  color: white;
+  transition: 0.5s;
+  background-color: #575757;
+  text-decoration: none
 }
 
 
