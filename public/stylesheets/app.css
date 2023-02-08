@@ -840,14 +840,9 @@ ol{
     transform: translate(-50%, -50%);
     margin-top: 10%;
     cursor: pointer;
+    position: bottom;
 }
 
-/* Fixes header image on smaller screen resolution */
-@media screen and (max-width: 900px) {
-  .middle {
-      margin-top: 20%;
-  }
-}
 
 .mouse {
     width: 35px;
