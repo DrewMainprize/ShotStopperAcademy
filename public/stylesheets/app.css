@@ -97,7 +97,7 @@ a {
 }
 
 .header-socials a:hover {
-    color: green;
+    color: darkgray;
     transition: 0.5s;
 }
 
@@ -592,8 +592,8 @@ Main Components
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  height: 34px;
-  width: 34px;
+  height: 40px; /* 34px*/ 
+  width: 40px;
   border-radius: 50%;
   border: 2px solid #dfdfdf;
   /* replace text with an icon */
@@ -624,6 +624,7 @@ Main Components
 }
 .cd-timeline-navigation a.prev {
   left: 0;
+  margin-top: 40px;
   -webkit-transform: translateY(-50%) rotate(180deg);
   -moz-transform: translateY(-50%) rotate(180deg);
   -ms-transform: translateY(-50%) rotate(180deg);
@@ -631,6 +632,7 @@ Main Components
   transform: translateY(-50%) rotate(180deg);
 }
 .cd-timeline-navigation a.next {
+  margin-top: 40px;
   right: 0;
 }
 .no-touch .cd-timeline-navigation a:hover {

@@ -16,7 +16,7 @@ function scrollFunction() {
 
 jQuery(document).ready(function($){
 	var timelines = $('.cd-horizontal-timeline'),
-		eventsMinDistance = 100;
+		eventsMinDistance = 150;
 
 	(timelines.length > 0) && initTimeline(timelines);
 
