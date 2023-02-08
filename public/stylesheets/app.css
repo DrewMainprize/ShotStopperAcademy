@@ -562,7 +562,7 @@ Main Components
 .cd-horizontal-timeline .events a.selected .tlHover{
   pointer-events: none;
   color: white;
-  background-color: black;
+  background-color: darkgray;
 }
 .cd-horizontal-timeline .events a.selected::after {
   background-color: #241b1b;
@@ -839,7 +839,7 @@ ol{
 .tlHover:hover {
   color: white;
   transition: 0.5s;
-  background-color: #575757;
+  background-color: lightgray;
   text-decoration: none
 }
 
