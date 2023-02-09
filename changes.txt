@@ -1,6 +1,5 @@
 
-- Can we remove pursuits address from the website footer? Just dont want mail going there since we will have other training facilities in the future as well.  
-- Under the "our coaches" area it has the contact information, I dont know if you need the website there since they are already on it. Is it possible to replace it with his email? 
+- Can we remove pursuits address from the website footer? Just dont want mail going there since we will have other training facilities in the future as well.   
 
 
 Under about us 

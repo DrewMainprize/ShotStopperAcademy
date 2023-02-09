@@ -68,7 +68,8 @@ section {
 }
 
 #mainLogo{
-    height: 16vh;
+    height: 22vh;
+    margin-bottom: 40px;
 }
 
 a {
@@ -405,7 +406,7 @@ label {
 }
   
 #nav2{
-    background: black;
+    background: #222222;
     z-index: 99;
     position: fixed;
     top: -100px;
@@ -945,4 +946,9 @@ ol{
   background-color: #222222;
   margin-bottom: 0 !important;
   padding-bottom: 2rem !important;
+}
+
+.about-img{
+  height: auto;
+  width: 100%;
 }
