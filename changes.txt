@@ -1,0 +1,13 @@
+
+- On the Contact Us box, my mom pointed out there isnt an "X" to close it. I just said click the page and it will go away but she said on the mobile one it wasnt easy / clear how to exit the box. (LOL moms but unfortunately they are the ones with money paying for the training ) 
+- Can we remove pursuits address from the website footer? Just dont want mail going there since we will have other training facilities in the future as well.  
+- Under the "our coaches" area it has the contact information, I dont know if you need the website there since they are already on it. Is it possible to replace it with his email? 
+
+
+Under about us 
+ - Is it possible to change the location of the map and put it in the footer or the website or close to the bottom? 
+- Can we replace the map with one of the photos that looks good there? 
+
+
+Biography: 
+- Is it possible to have the timeline of his playing only pop up if someone clicks on a button that says "Player Experience"?
