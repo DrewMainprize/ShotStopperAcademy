@@ -2,7 +2,7 @@ body{
 	text-align: center;
 	background-color: black;
     color: white;
-    font-size: 20px;
+    font-size: 2vw; /* 20px */
     letter-spacing: 2px;
     position: relative;
 }
@@ -20,8 +20,8 @@ header {
 
     background-image: 
     linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1)
     ),
     url("/images/Landingv2.jpg");
 }
@@ -78,7 +78,7 @@ a {
 
 .contact-button {
     text-decoration: none;
-    font-size: 24px;
+    font-size: 30px;
     font-weight: 500;
 }
 
@@ -117,20 +117,30 @@ a {
 
 .landing-title h1 {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 3vw;
     text-transform: uppercase;
+    color: white;
 }
-
+/*
 .landing-title h1 span {
     font-size: 3rem;
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white;
 }
+*/
+
+.red{
+  color: red;
+}
 
 .banner-text {
-    color: lightgrey;
+    margin-top: 50px;
+    color: darkgray;
     padding-bottom: 20px;
+    font-weight: 500;
+    font-size: 2vw;
+    text-align: left;
 }
 
 .btn-primary-outline {
