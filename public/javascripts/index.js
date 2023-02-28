@@ -16,7 +16,7 @@ function scrollFunction() {
 
 jQuery(document).ready(function($){
 	var timelines = $('.cd-horizontal-timeline'),
-		eventsMinDistance = 150;
+		eventsMinDistance = 100;
 
 	(timelines.length > 0) && initTimeline(timelines);
 
@@ -145,8 +145,12 @@ jQuery(document).ready(function($){
 
 	function setDatePosition(timelineComponents, min) {
 		for (i = 0; i < timelineComponents['timelineDates'].length; i++) { 
-		    var distance = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][i]),
-		    	distanceNorm = Math.round(distance/timelineComponents['eventsMinLapse']) + 2;
+			var distance = daydiff(timelineComponents['timelineDates'][0], timelineComponents['timelineDates'][i]),
+		    distanceNorm = Math.round(distance/timelineComponents['eventsMinLapse']) + 1;
+			console.log(timelineComponents['timelineDates'][i]);
+			console.log(distanceNorm);
+		
+
 		    timelineComponents['timelineEvents'].eq(i).css('left', distanceNorm*min+'px');
 		}
 	}

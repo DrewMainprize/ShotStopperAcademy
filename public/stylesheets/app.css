@@ -80,6 +80,7 @@ a {
     text-decoration: none;
     font-size: 30px;
     font-weight: 500;
+    margin-left: 40px;
 }
 
 .contact-button:hover {
@@ -671,7 +672,7 @@ Main Components
 }
 .cd-timeline-navigation a.prev {
   left: 0;
-  margin-top: 40px;
+  margin-top: 0px;
   -webkit-transform: translateY(-50%) rotate(180deg);
   -moz-transform: translateY(-50%) rotate(180deg);
   -ms-transform: translateY(-50%) rotate(180deg);
@@ -679,7 +680,7 @@ Main Components
   transform: translateY(-50%) rotate(180deg);
 }
 .cd-timeline-navigation a.next {
-  margin-top: 40px;
+  margin-top: 0px;
   right: 0;
 }
 .no-touch .cd-timeline-navigation a:hover {
@@ -949,6 +950,19 @@ ol{
 
 .bio-heading{
     margin: 1em;
+    display: inline;
+    
+}
+
+.bioHeadDiv{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between !important;
+
+}
+
+.playButton{
+  margin: 1em;
 }
 
 
@@ -961,4 +975,12 @@ ol{
 .about-img{
   height: auto;
   width: 100%;
+}
+
+.eapps-link{
+  visibility: hidden!important;
+}
+
+#timeHead{
+  padding: 20px;
 }
