@@ -39,6 +39,11 @@ header {
   .card-body{
     padding: 1rem 1rem;
   }
+
+  .our-quote {
+    background-position: bottom;
+
+}
 }
 
 footer {
@@ -179,7 +184,7 @@ a {
 
 .our-quote {
     height: 50vh;
-    background-image: /*url("/images/GEE_0773.jpg");*/ url("/images/ScollBG.jpg");
+    background-image: url("/images/GEE_0773.jpg");
     background-repeat: repeat-y;
     background-attachment: fixed;
     background-position: top;
