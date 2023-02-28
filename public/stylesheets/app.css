@@ -180,7 +180,7 @@ a {
 .our-quote {
     height: 60vh;
     background-image: url("/images/GEE_0773.jpg"); /*url("/images/ScollBG.jpg");*/
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;/*repeat-y;*/
     background-attachment: fixed;
     background-position: top;
     filter: grayscale(50%) saturate(0.5);
