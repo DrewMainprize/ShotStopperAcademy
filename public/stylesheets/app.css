@@ -178,7 +178,7 @@ a {
 }
 
 .our-quote {
-    height: 60vh;
+    height: 50vh;
     background-image: url("/images/GEE_0773.jpg"); /*url("/images/ScollBG.jpg");*/
     background-repeat: no-repeat;/*repeat-y;*/
     background-attachment: fixed;
