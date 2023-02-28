@@ -42,6 +42,7 @@ header {
 
   .our-quote {
     background-attachment: scroll;
+    background-repeat: no-repeat;
   }
 
 }
