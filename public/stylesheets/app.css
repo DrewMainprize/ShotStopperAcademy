@@ -40,9 +40,10 @@ header {
     padding: 1rem 1rem;
   }
 
-  .our-quote{
-    background-size: 100%;
+  .our-quote {
+    background-attachment: scroll;
   }
+
 }
 
 footer {
