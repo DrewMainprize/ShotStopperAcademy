@@ -40,10 +40,9 @@ header {
     padding: 1rem 1rem;
   }
 
-  .our-quote {
-    background-position: -30%;
-
-}
+  .our-quote{
+    background-repeat: no-repeat;
+  }
 }
 
 footer {
