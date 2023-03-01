@@ -2,7 +2,7 @@ body{
 	text-align: center;
 	background-color: black;
     color: white;
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: 2px;
     position: relative;
 }
@@ -49,7 +49,7 @@ header {
 
 footer {
     text-align: left;
-    font-size: 16px !important;
+    font-size: 1rem !important;
     background-color: #222222;
 }
 
@@ -128,7 +128,7 @@ a {
 
 .landing-title h1 {
     font-weight: 700;
-    font-size: 3.5vw;
+    font-size: 1.6rem;
     text-transform: uppercase;
     color: white;
 }
@@ -150,7 +150,7 @@ a {
     color: darkgray;
     padding-bottom: 20px;
     font-weight: 500;
-    font-size: 3vw;
+    font-size: 1rem;
     text-align: left;
 }
 
