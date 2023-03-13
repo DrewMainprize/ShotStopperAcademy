@@ -1,8 +1,10 @@
 # ShotStopperAcademy
 
-## This project is now live at shotstopperacademy.com
 
 ## Project Description
+
+This project is now live at shotstopperacademy.com
+
 Soccer goaltender training web app designed for a local client to provide their
 customers with important information about their services and coaches. Includes
 a contact form, various animations and HTML/CSS elements, embedded social media
